@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Dayi'Nails
+// sw.js - Service Worker para Bellas Manos
 
-const CACHE_NAME = 'dayi-nails-v1';
+const CACHE_NAME = 'bellasmanos-v1';
 const urlsToCache = [
-  '/dayinails/',
-  '/dayinails/index.html',
-  '/dayinails/admin.html',
-  '/dayinails/admin-login.html',
-  '/dayinails/setup-wizard.html',
-  '/dayinails/editar-negocio.html',
-  '/dayinails/manifest.json',
-  '/dayinails/icons/icon-72x72.png',
-  '/dayinails/icons/icon-96x96.png',
-  '/dayinails/icons/icon-128x128.png',
-  '/dayinails/icons/icon-144x144.png',
-  '/dayinails/icons/icon-152x152.png',
-  '/dayinails/icons/icon-192x192.png',
-  '/dayinails/icons/icon-384x384.png',
-  '/dayinails/icons/icon-512x512.png'
+  '/bellasmanos/',
+  '/bellasmanos/index.html',
+  '/bellasmanos/admin.html',
+  '/bellasmanos/admin-login.html',
+  '/bellasmanos/setup-wizard.html',
+  '/bellasmanos/editar-negocio.html',
+  '/bellasmanos/manifest.json',
+  '/bellasmanos/icons/icon-72x72.png',
+  '/bellasmanos/icons/icon-96x96.png',
+  '/bellasmanos/icons/icon-128x128.png',
+  '/bellasmanos/icons/icon-144x144.png',
+  '/bellasmanos/icons/icon-152x152.png',
+  '/bellasmanos/icons/icon-192x192.png',
+  '/bellasmanos/icons/icon-384x384.png',
+  '/bellasmanos/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/dayinails/icons/icon-192x192.png');
+            return caches.match('/bellasmanos/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Dayi\'Nails');
+console.log('✅ Service Worker configurado para Bellas Manos');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);

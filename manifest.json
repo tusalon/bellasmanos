@@ -1,20 +1,20 @@
 {
-  "name": "Dayi'Nails",
-  "short_name": "Dayi",
+  "name": "Bellas Manos",
+  "short_name": "Bellas",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/dayinails/",
-  "scope": "/dayinails/",
+  "start_url": "/bellasmanos/",
+  "scope": "/bellasmanos/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/dayinails/icons/icon-192x192.png",
+      "src": "/bellasmanos/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/dayinails/icons/icon-512x512.png",
+      "src": "/bellasmanos/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
