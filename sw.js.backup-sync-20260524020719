@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Bellas Manos
 
-const CACHE_NAME = 'bellasmanos-v29';
+const CACHE_NAME = 'bellasmanos-v25';
 const urlsToCache = [
   '/bellasmanos/',
   '/bellasmanos/index.html',
