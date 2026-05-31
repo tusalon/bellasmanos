@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Bellas Manos
 
-const CACHE_NAME = 'bellasmanos-v29';
+const CACHE_NAME = 'bellasmanos-v47';
 const urlsToCache = [
   '/bellasmanos/',
   '/bellasmanos/index.html',
@@ -17,7 +17,14 @@ const urlsToCache = [
   '/bellasmanos/icons/icon-152x152.png',
   '/bellasmanos/icons/icon-192x192.png',
   '/bellasmanos/icons/icon-384x384.png',
-  '/bellasmanos/icons/icon-512x512.png'
+  '/bellasmanos/icons/icon-512x512.png',
+  '/bellasmanos/vendor/react.production.min.js',
+  '/bellasmanos/vendor/react-dom.production.min.js',
+  '/bellasmanos/vendor/babel.min.js',
+  '/bellasmanos/vendor/bcrypt.min.js',
+  '/bellasmanos/vendor/tailwind-browser.js',
+  '/bellasmanos/vendor/lucide/lucide.css',
+  '/bellasmanos/vendor/lucide/lucide.woff2'
 ];
 
 // ============================================
